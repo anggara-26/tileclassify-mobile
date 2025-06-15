@@ -1,35 +1,35 @@
-# TileClassify: Sistem Pengenalan dan Klasifikasi Genteng
+# TileClassify: Roof Tile Recognition and Classification System
 
 <p align="center">
-  <b>Aplikasi Mobile untuk Klasifikasi Jenis dan Harga Genteng</b><br>
-  <i>Kerjasama Mahasiswa dan Dosen Universitas Mercu Buana</i>
+  <b>Mobile Application for Roof Tile Type and Price Classification</b><br>
+  <i>Collaboration between Students and Professors at Mercu Buana University</i>
 </p>
 
 <p align="center">
-  <a href="#tentang-projek">Tentang Projek</a> •
-  <a href="#fitur-utama">Fitur Utama</a> •
-  <a href="#cara-menggunakan">Cara Menggunakan</a> •
-  <a href="#instalasi--pengembangan">Instalasi & Pengembangan</a> •
-  <a href="#teknologi-yang-digunakan">Teknologi</a> •
-  <a href="#kontribusi">Kontribusi</a> •
-  <a href="#lisensi">Lisensi</a>
+  <a href="#about-the-project">About the Project</a> •
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How to Use</a> •
+  <a href="#installation--development">Installation & Development</a> •
+  <a href="#technologies-used">Technologies</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
 </p>
 
-## Tentang Projek
+## About the Project
 
-TileClassify adalah aplikasi mobile yang dikembangkan untuk membantu mengklasifikasikan jenis dan harga genteng melalui gambar. Proyek ini merupakan hasil kerjasama antara mahasiswa dan dosen dalam mengimplementasikan model AI untuk pengenalan genteng.
+TileClassify is a mobile application developed to help classify types and prices of roof tiles through images. This project is the result of collaboration between students and professors in implementing an AI model for roof tile recognition.
 
-Aplikasi ini menggunakan teknologi React Native (Expo) untuk frontend mobile dan terhubung dengan backend API yang menggunakan model machine learning untuk klasifikasi, dapat dilihat [di repository backend](https://github.com/anggara-26/tileclassify-backend). Pengguna dapat mengambil foto genteng menggunakan kamera smartphone atau memilih gambar dari galeri, lalu sistem akan mengklasifikasikan jenis genteng beserta perkiraan harganya.
+The application uses React Native (Expo) technology for the mobile frontend and connects to a backend API that uses a machine learning model for classification, which can be found [in the backend repository](https://github.com/anggara-26/tileclassify-backend). Users can take photos of roof tiles using their smartphone camera or select images from the gallery, and the system will classify the type of roof tile along with its estimated price.
 
-## Fitur Utama
+## Key Features
 
-- **Pengambilan Foto Langsung**: Ambil foto genteng langsung menggunakan kamera perangkat
-- **Pilihan Gambar dari Galeri**: Pilih gambar genteng dari galeri perangkat
-- **Klasifikasi Otomatis**: Mengenali jenis genteng dan estimasi harga
-- **Tampilan Hasil dengan Confidence Level**: Lihat hasil klasifikasi dengan tingkat kepercayaan
-- **Antarmuka Pengguna Modern**: Desain UI yang intuitif dan mudah digunakan
-- **Dukungan Light/Dark Mode**: Tampilan yang nyaman untuk berbagai kondisi cahaya
-- **Optimasi Gambar Otomatis**: Proses kompresi dan pengolahan gambar sebelum dikirim ke API
+- **Direct Photo Capture**: Take photos of roof tiles directly using the device's camera
+- **Gallery Image Selection**: Select roof tile images from the device's gallery
+- **Automatic Classification**: Recognize roof tile types and price estimates
+- **Results Display with Confidence Level**: View classification results with confidence levels
+- **Modern User Interface**: Intuitive and easy-to-use UI design
+- **Light/Dark Mode Support**: Comfortable display for various lighting conditions
+- **Automatic Image Optimization**: Compression and processing of images before sending to the API
 
 ## Demo
 
@@ -39,60 +39,60 @@ Aplikasi ini menggunakan teknologi React Native (Expo) untuk frontend mobile dan
   <img src="./assets/docs/demo-3.jpg" alt="Screenshot 3" width="200" />
 </p>
 
-## Cara Menggunakan
+## How to Use
 
-1. Buka aplikasi dan navigasikan ke tab "Klasifikasi"
-2. Pilih salah satu metode pengambilan gambar:
-   - **Ambil Foto dengan Kamera**: Untuk mengambil gambar genteng secara langsung
-   - **Pilih Gambar dari Galeri**: Untuk memilih foto genteng yang sudah ada
-3. Tekan tombol "Klasifikasi" untuk memproses gambar
-4. Hasil klasifikasi akan ditampilkan berupa:
-   - Jenis genteng
-   - Perkiraan harga
-   - Tingkat kepercayaan analisis
+1. Open the application and navigate to the "Classification" tab
+2. Choose one of the image capture methods:
+   - **Take Photo with Camera**: To capture roof tile images directly
+   - **Select Image from Gallery**: To select existing roof tile photos
+3. Press the "Classify" button to process the image
+4. Classification results will be displayed as:
+   - Roof tile type
+   - Estimated price
+   - Analysis confidence level
 
-## Instalasi & Pengembangan
+## Installation & Development
 
-### Prasyarat
+### Prerequisites
 
-- Node.js (versi 18 atau yang lebih baru)
+- Node.js (version 18 or newer)
 - pnpm
 - Expo CLI
-- Expo Go di perangkat mobile (untuk testing)
+- Expo Go on mobile device (for testing)
 
-### Langkah Instalasi
+### Installation Steps
 
-1. Clone repositori:
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/anggara-26/tileclassify-mobile.git
    cd tileclassify-mobile
    ```
 
-2. Install dependensi:
+2. Install dependencies:
 
    ```bash
    pnpm install
    ```
 
-3. Konfigurasi API endpoint:
+3. Configure API endpoint:
 
-   Buka file `services/api.ts` dan sesuaikan `baseURL` dengan URL API klasifikasi yang digunakan.
+   Open the `services/api.ts` file and adjust the `baseURL` with the classification API URL being used.
 
-4. Jalankan aplikasi:
+4. Run the application:
 
    ```bash
    pnpm start
    ```
 
-5. Scan QR code dengan Expo Go atau jalankan di emulator
+5. Scan the QR code with Expo Go or run on an emulator
 
-### Menjalankan di Perangkat
+### Running on Devices
 
-- **Android**: Scan QR code dengan Expo Go atau jalankan `pnpm android`
-- **iOS**: Scan QR code dengan Camera app atau jalankan `pnpm ios`
+- **Android**: Scan QR code with Expo Go or run `pnpm android`
+- **iOS**: Scan QR code with Camera app or run `pnpm ios`
 
-## Struktur Proyek
+## Project Structure
 
 ```
 tileclassify-mobile/
@@ -109,37 +109,37 @@ tileclassify-mobile/
 └── README.md             # Project documentation
 ```
 
-## Teknologi yang Digunakan
+## Technologies Used
 
 - **Frontend**:
 
-  - React Native dengan [Expo](https://expo.dev/)
-  - [Expo Router](https://expo.github.io/router/docs/) untuk navigasi
-  - [Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/) untuk pengambilan foto
-  - [Expo Image Picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/) untuk akses galeri
-  - [Expo Image Manipulator](https://docs.expo.dev/versions/latest/sdk/imagemanipulator/) untuk optimisasi gambar
-  - TypeScript untuk type safety
+  - React Native with [Expo](https://expo.dev/)
+  - [Expo Router](https://expo.github.io/router/docs/) for navigation
+  - [Expo Camera](https://docs.expo.dev/versions/latest/sdk/camera/) for photo capture
+  - [Expo Image Picker](https://docs.expo.dev/versions/latest/sdk/imagepicker/) for gallery access
+  - [Expo Image Manipulator](https://docs.expo.dev/versions/latest/sdk/imagemanipulator/) for image optimization
+  - TypeScript for type safety
 
 - **Backend**:
-  - API dengan model machine learning untuk klasifikasi genteng
-  - Komunikasi API menggunakan Axios
-  - Dapat dilihat [di sini](https://github.com/anggara-26/tileclassify-backend)
+  - API with machine learning model for roof tile classification
+  - API communication using Axios
+  - Can be viewed [here](https://github.com/anggara-26/tileclassify-backend)
 
-## Kontribusi
+## Contributing
 
-Saya sangat menghargai kontribusi untuk meningkatkan proyek ini. Untuk berkontribusi:
+I greatly appreciate contributions to improve this project. To contribute:
 
-1. Fork repositori
-2. Buat branch fitur (`git checkout -b feature/amazing-feature`)
-3. Commit perubahan Anda (`git commit -m 'Add some amazing feature'`)
-4. Push ke branch (`git push origin feature/amazing-feature`)
-5. Buka Pull Request
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## Lisensi
+## License
 
-Proyek ini dilisensikan di bawah [MIT License](LICENSE). Lihat file LICENSE untuk detail lebih lanjut.
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
 
-## Ucapan Terima Kasih
+## Acknowledgments
 
-- Kepada dosen untuk penelitian dan model AI yang digunakan
-- Tim pengembang open source di balik teknologi yang digunakan
+- To the professors for the research and AI model used
+- The open source development teams behind the technologies used
