@@ -3,7 +3,7 @@ import axios from "axios";
 // Buat instance axios dengan konfigurasi dasar
 const api = axios.create({
   // Ganti dengan URL API yang sebenarnya
-  baseURL: "https://b633-111-95-18-190.ngrok-free.app/",
+  baseURL: "https://9f7a-111-95-226-100.ngrok-free.app/",
   headers: {
     "Content-Type": "multipart/form-data",
     Accept: "application/json",
